@@ -5,7 +5,7 @@ import Navbar from './components/navegate/Navbar'
 import Inicio from './components/pages/Inicio'
 import Funko from './components/pages/Funko'
 import Items from './components/pages/Items'
-
+import {ItemListCointainer} from './components/ItemListCointainer/index';
 
 
 const App = () => {
@@ -26,7 +26,8 @@ const App = () => {
             type="Anime"
             serie="Demon Slayer"
             image="./TanjiroKamado.jpg"
-            />    
+            />
+            <ItemListCointainer/>
       </div>
   );
 }
