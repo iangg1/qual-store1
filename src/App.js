@@ -1,5 +1,5 @@
   import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Routes} from 'react-router-dom'
 // import {FunkoM} from './components/props/props';
 import Navbar from './components/navegate/Navbar'
 // import Inicio from './components/pages/Inicio'
@@ -13,13 +13,25 @@ const App = () => {
   
   return (
     <div className="App">
+
+        {/* <BrowserRouter/> */}
+
         <Router>
 
         <Navbar/>
+        <h1>Funkos</h1>
+
+        <Routes>
+          <Route path='/inicio' element={<ItemListCointainer />} />
+          <Route path='/categoria/:categoriaId' element={<ItemListCointainer />} />
+          <Route path='/cart' element={<ItemListCointainer />} />
+          <Route path='/detalle' element={<ItemListCointainer />} />
+        </Routes>
 
         </Router>
 
-        <h1>Funkos</h1>
+
+
         {/* <hr/> */}
         {/* <FunkoM
             name="Tanjiro Kamado"
@@ -27,7 +39,7 @@ const App = () => {
             serie="Demon Slayer"
             image="./TanjiroKamado.jpg"
             /> */}
-            <ItemListCointainer/>
+            {/* <ItemListCointainer/> */}
       </div>
   );
 }

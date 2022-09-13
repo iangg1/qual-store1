@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CartWidget from '../CartWidget/cartwidget.jsx'
+import { NavLink } from 'react-router-dom'
 
 const navbar = () => {
   return (
     <div>
     <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-            <Link to='/'>
+            <Link to='/inicio'>
                 <img src='./IconQualStore.jpg' width='100'/>
             </Link>
             <a className="navbar-brand" href="#"></a>
@@ -17,26 +18,44 @@ const navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <NavLink className="nav-link active" aria-current="page" to='/inicio'>Inicio</NavLink>
                 </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Stock</a>
+                <NavLink className="nav-link active" to='/categoria/movies'>Movies</NavLink>
             </li>
-            <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li className="nav-item">
+                <NavLink className="nav-link active" to='/categoria/music'>Music</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="nav-link active" to='/categoria/cartoon'>Cartoon</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="nav-link active" to='/categoria/anime'>Anime</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="nav-link active" to='/categoria/celebrities'>Celebrities</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="nav-link active" to='/categoria/sponsors'>Sponsors</NavLink>
+            </li>
+                 <li className="nav-item">
+                <NavLink className="nav-link active" to='/categoria/specials'>Funkos Specials</NavLink>
+            </li>       
+            {/* <li className="nav-item dropdown">
+                <NavLink className="nav-link dropdown-toggle" to='/' role="button" data-bs-toggle="dropdown" aria-expanded="true">
                     Marcas
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                    <li><NavLink className="dropdown-item" to='/categoria'>Action</NavLink></li>
+                    <li><NavLink className="dropdown-item" to='/categoria'>Action</NavLink></li>
                     <li><hr className="dropdown-divider"/></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><NavLink className="dropdown-item" to='/categoria'>Action</NavLink></li>
                 </ul>
-                </li>
+                </li> */}
                 <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to='/cart'>
                     <CartWidget />
-                    </a>
+                    </NavLink>
             </li>
             </ul>
             <form className="d-flex" role="search">
