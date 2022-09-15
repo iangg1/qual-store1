@@ -9,7 +9,7 @@ const navbar = () => {
     <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
             <Link to='/inicio'>
-                <img src='./IconQualStore.jpg' width='100'/>
+                <img src='/IconQualStore.jpg' width='100'/>
             </Link>
             <a className="navbar-brand" href="#"></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,18 +43,7 @@ const navbar = () => {
             </li>
                  <li className="nav-item">
                 <NavLink className="nav-link active" to='/categoria/specials'>Funkos Specials</NavLink>
-            </li>       
-            {/* <li className="nav-item dropdown">
-                <NavLink className="nav-link dropdown-toggle" to='/' role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    Marcas
-                </NavLink>
-                <ul className="dropdown-menu">
-                    <li><NavLink className="dropdown-item" to='/categoria'>Action</NavLink></li>
-                    <li><NavLink className="dropdown-item" to='/categoria'>Action</NavLink></li>
-                    <li><hr className="dropdown-divider"/></li>
-                    <li><NavLink className="dropdown-item" to='/categoria'>Action</NavLink></li>
-                </ul>
-                </li> */}
+            </li>      
                 <li className="nav-item">
                 <NavLink className="nav-link" to='/cart'>
                     <CartWidget />

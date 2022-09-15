@@ -3,6 +3,7 @@ import ItemList from '../ItemList/itemList';
 import React, {useState, useEffect} from 'react';
 // import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import  ItemDetail  from '../ItemDetail/ItemDetail';
 
 const FunkoFile = [
     {id: 1, title: "Godzilla",serie:'Godzilla', type:'Movie',price:"200$", image:"/Godzilla.jpg", category:'movies'},
@@ -34,11 +35,14 @@ export const ItemDetailContainer = (texto) => {
                 resolve(FunkoFile)
             }, 2000);
         });
-            getData.then(res => setData(res.filter(FunkoFile => FunkoFile.id === parseInt(detalleId))));    
+            getData.then(res => setData(res.find(FunkoFile => FunkoFile.id === parseInt(detalleId))));    
         }, [])
   
     return (
-            <ItemList  data={data}/>
+        <>
+        <ItemDetail  data={data}/>
+        </>
+            
   )
 }
 

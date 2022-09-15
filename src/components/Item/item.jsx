@@ -11,14 +11,11 @@ const Item = ({dato}) => {
         <FunkoM
          image={dato.image}
          name={dato.title}
-         type={dato.type}
-         serie={dato.serie}
-         precio={dato.price}
          />
-         
     </Link>
          
   )
 }
+
 
 export default Item;

@@ -15,7 +15,6 @@ const App = () => {
   return (
     <div className="App">
 
-        {/* <BrowserRouter/> */}
 
         <Router>
 
@@ -32,15 +31,6 @@ const App = () => {
         </Router>
 
 
-
-        {/* <hr/> */}
-        {/* <FunkoM
-            name="Tanjiro Kamado"
-            type="Anime"
-            serie="Demon Slayer"
-            image="./TanjiroKamado.jpg"
-            /> */}
-            {/* <ItemListCointainer/> */}
       </div>
   );
 }

@@ -42,16 +42,11 @@ export const ItemListCointainer = (texto) => {
         
 
     }, [categoriaId])
-  
-    // const onAdd = (quantity) => {
-    //     console.log('compraste ${quantity} unidades')
-    // }
+
 
     return (
         <>
             <ItemList  data={data}/>
-            {/* <ItemCount initial={3} stock={5}/> */}
-            {/* <ItemDetail data={data}/> */}
         </>
   )
 }

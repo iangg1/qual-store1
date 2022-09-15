@@ -31,14 +31,3 @@ export const ItemCount = ({initial, stock, onAdd}) => {
 }
 
 export default ItemCount;
-
-// (
-//     <div className='counter'>
-
-//         <button>    -    </button>
-//         <span>    1    </span>
-//         <button>    +    </button>
-//         <div>
-//             <button>Agregar al carrito</button>
-//         </div>
-//     </div>
