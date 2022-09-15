@@ -15,6 +15,7 @@ const Item = ({dato}) => {
          serie={dato.serie}
          precio={dato.price}
          />
+         
     </Link>
          
   )

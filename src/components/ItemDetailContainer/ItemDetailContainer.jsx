@@ -22,7 +22,7 @@ const FunkoFile = [
     {id: 15, title:"Rainbow Dash", serie:'My Little Pony', type:'Cartoon', price:"200$", image:"/RainbowDash.jpg", category:'cartoon'}
 ];
 
-export const ItemListCointainer = (texto) => {
+export const ItemDetailContainer = (texto) => {
 
     const [data, setData] = useState([]);
 
@@ -34,16 +34,12 @@ export const ItemListCointainer = (texto) => {
                 resolve(FunkoFile)
             }, 2000);
         });
-            getData.then(res => setData(res.filter(FunkoFile => FunkoFile.Id === parseInt(detalleId))));    
+            getData.then(res => setData(res.filter(FunkoFile => FunkoFile.id === parseInt(detalleId))));    
         }, [])
   
     return (
-        <>
             <ItemList  data={data}/>
-            {/* <ItemCount initial={3} stock={5}/> */}
-            {/* <ItemDetail data={data}/> */}
-        </>
   )
 }
 
-export default ItemDetailContainer;
+export default ItemDetailContainer; 

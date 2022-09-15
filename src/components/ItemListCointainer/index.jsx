@@ -28,8 +28,6 @@ export const ItemListCointainer = (texto) => {
 
     const {categoriaId} = useParams();
 
-    const {detalleId} = useParams();
-
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
