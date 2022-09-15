@@ -21,7 +21,7 @@ const navbar = () => {
                     <NavLink className="nav-link active" aria-current="page" to='/inicio'>Inicio</NavLink>
                 </li>
             <li className="nav-item">
-                <NavLink className="nav-link active" to='/categoria/movies'>Movies</NavLink>
+                <NavLink className="nav-link active" to='/categoria/movies'>Movies and Series</NavLink>
             </li>
             <li className="nav-item">
                 <NavLink className="nav-link active" to='/categoria/music'>Music</NavLink>
@@ -34,6 +34,9 @@ const navbar = () => {
             </li>
             <li className="nav-item">
                 <NavLink className="nav-link active" to='/categoria/celebrities'>Celebrities</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="nav-link active" to='/categoria/videogames'>Videogames</NavLink>
             </li>
             <li className="nav-item">
                 <NavLink className="nav-link active" to='/categoria/sponsors'>Sponsors</NavLink>
