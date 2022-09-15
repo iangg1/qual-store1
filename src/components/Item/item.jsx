@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Item = ({dato}) => {
   return (
     
-    <a>
+    <Link to={`/detalle/${dato.id}`}>
         <FunkoM
          image={dato.image}
          name={dato.title}
@@ -15,7 +15,7 @@ const Item = ({dato}) => {
          serie={dato.serie}
          precio={dato.price}
          />
-    </a>
+    </Link>
          
   )
 }

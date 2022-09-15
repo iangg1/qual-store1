@@ -26,8 +26,6 @@ export const ItemListCointainer = (texto) => {
 
     const [data, setData] = useState([]);
 
-    const {categoriaId} = useParams();
-
     const {detalleId} = useParams();
 
     useEffect(() => {
@@ -36,19 +34,9 @@ export const ItemListCointainer = (texto) => {
                 resolve(FunkoFile)
             }, 2000);
         });
-        if (categoriaId){
-            getData.then(res => setData(res.filter(FunkoFile => FunkoFile.category === categoriaId)));    
-        } else   {
-            getData.then(res => setData(res))
-        }
-        
-
-    }, [categoriaId])
+            getData.then(res => setData(res.filter(FunkoFile => FunkoFile.Id === parseInt(detalleId))));    
+        }, [])
   
-    // const onAdd = (quantity) => {
-    //     console.log('compraste ${quantity} unidades')
-    // }
-
     return (
         <>
             <ItemList  data={data}/>
@@ -58,4 +46,4 @@ export const ItemListCointainer = (texto) => {
   )
 }
 
-export default ItemListCointainer;
+export default ItemDetailContainer;
