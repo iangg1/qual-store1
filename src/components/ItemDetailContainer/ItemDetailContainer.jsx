@@ -20,7 +20,8 @@ const FunkoFile = [
     {id: 12, title:"Zucaritas",serie:'Zucaritas', type:'Sponsors',price:"200$", image:"/Zucaritas.jpeg", category:'sponsors'},
     {id: 13, title:"Pikachu",serie:'Pokemon', type:'Anime',price:"200$", image:"/Pikachu.png", category:'anime'},
     {id: 14, title:"Tanjiro Kamado",serie:'Demon Slayer', type:'Anime',price:"200$", image:"/TanjiroKamado.jpg", category:'anime'},
-    {id: 15, title:"Rainbow Dash", serie:'My Little Pony', type:'Cartoon', price:"200$", image:"/RainbowDash.jpg", category:'cartoon'}
+    {id: 15, title:"Rainbow Dash", serie:'My Little Pony', type:'Cartoon', price:"200$", image:"/RainbowDash.jpg", category:'cartoon'},
+    {id: 16, title:"Plants vs Zombies", serie:'Plants vs Zombies', type:'Videogame', price:"200$", image:"/PlantsVsZombies.jpg", category:'videogame'}
 ];
 
 export const ItemDetailContainer = (texto) => {
