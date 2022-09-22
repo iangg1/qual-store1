@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react';
 // import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 
-const FunkoFile = [
+export const FunkoFile = [
     {id: 1, title: "Godzilla",serie:'Godzilla', type:'Movie',price:"200$", image:"/Godzilla.jpg", category:'movies'},
     {id: 2, title:"Mtv the person Moon",serie:'Mtv', type:'Music',price:"200$", image:"/MtvPersonMoon.jpg", category:'music'},
     {id: 3, title:"Lebron James",serie:'Lakers', type:'Sports',price:"200$", image:"/LebronJames.jpg", category:'celebrities'},
