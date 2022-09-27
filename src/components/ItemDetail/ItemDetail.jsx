@@ -25,7 +25,7 @@ import { useCartContext } from '../../CartContext/CartContext';
          />
         {
           goToCart
-            ? <Link to='/carrito'>Sigue aqui para finalizar tu compra!</Link>
+            ? <Link to='/cart'>Sigue aqui para finalizar tu compra!</Link>
             : <ItemCount initial={1} stock={10} onAdd={onAdd}/>
         }
        </>

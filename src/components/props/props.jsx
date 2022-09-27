@@ -14,7 +14,7 @@ export const FunkoM2 = (props) => {
         <h2>{props.name}</h2>
         <p>Type: {props.type} </p>
         <p>Serie: {props.serie} </p>
-        <p>Price: {props.precio}</p>
+        <p>Price: ${props.precio}</p>
        </>
     );
 }

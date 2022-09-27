@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Switch, Route, Routes} from 'react-router-dom'
 import Navbar from './components/navegate/Navbar'
 import {ItemListCointainer} from './components/ItemListCointainer/index';
 import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer';
-import {Carrito} from './components/Cart/Cart'
+import { Cart } from './components/Cart/Cart';
 import React from 'react';
 import CartProvider from './CartContext/CartContext';
 
@@ -28,7 +28,7 @@ const App = () => {
           <Route path='/inicio' element={<ItemListCointainer />} />
           <Route path='/' element={<ItemListCointainer />} />
           <Route path='/categoria/:categoriaId' element={<ItemListCointainer />} />
-          <Route path='/carrito' element={<Carrito />} />
+          <Route path='/cart' element={<Cart />} />
           <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
         </Routes>
         </CartProvider>
