@@ -36,6 +36,5 @@ npm start
 
 Instrucciones de uso
 Buscar en la tienda el/los producto/s deseado/s y sumelo/s al carrito, los productos estan filtrados por categorías para mayor accesibilidad
-Vaya al carrito y visualice su/s producto/s seleccionado/s y presione el botón "Completar Formulario"
-Llene la información requerida en el formulario
-Finalice su compra presionando su respectivo botón
+Vaya al carrito y visualice su/s producto/s seleccionado/s y presione el boton para mandar algunos datos a la base de datos y finiquitar su compra.
+
